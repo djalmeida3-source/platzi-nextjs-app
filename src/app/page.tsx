@@ -1,12 +1,13 @@
-"use client";
-
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Description } from "app/components/home/Description";
+import { Hero } from "app/components/home/Hero";
+import { MainProducts } from "app/components/home/MainProducts";
 
 export default function Home() {
-  console.log("Hello World initial page");
-  
   return (
-    <h1>Hola mundo</h1>
+    <main>
+      <Hero />
+      <Description />
+      <MainProducts />
+    </main>
   );
 }

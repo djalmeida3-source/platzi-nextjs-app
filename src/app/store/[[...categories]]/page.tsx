@@ -7,10 +7,7 @@ interface CategoriesProps {
 
 export default function Category(props: CategoriesProps) {
   const { categories } = props.params;
-  console.log(categories);
-  console.log(props);
-  
-  
+  // throw new Error('Boom')
   return (
     <h1>Category dinamic: {categories}</h1>
   );
